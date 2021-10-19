@@ -1,0 +1,8 @@
+.layout{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.layout :hover{
+    color: red; 
+}

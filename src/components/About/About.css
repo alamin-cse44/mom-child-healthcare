@@ -1,0 +1,19 @@
+
+.about1{
+    display: flex; 
+}
+.link1{
+    text-decoration: none;
+}
+.text-align{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+ul li{
+    margin-bottom: 10px;
+}
+.mg{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
