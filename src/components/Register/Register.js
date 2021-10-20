@@ -1,6 +1,6 @@
 import { setPersistence } from '@firebase/auth';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import login from '../../assets/icons/login.jpg';
 import './Register.css';
 import { getAuth, createUserWithEmailAndPassword,updateProfile } from "firebase/auth";
@@ -11,6 +11,11 @@ const Register = () => {
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
     const [error,setError] = useState('');
+
+    const location = useLocation();
+    const history = useHistory();
+    console.log('came from ', location.state?.from);
+    const redirect_uri = location.state?.from || '/home';
 
     const auth = getAuth();
 
@@ -29,6 +34,7 @@ const Register = () => {
           .then(result =>{
               const user = result.user;
               console.log(user);
+              history.push(redirect_uri);
               setError('');
               setUserName();
           })

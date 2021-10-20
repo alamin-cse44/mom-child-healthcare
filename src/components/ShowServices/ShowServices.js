@@ -15,9 +15,8 @@ const ShowServices = (props) => {
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">{description}</p>
-                <button className='bttn'>
-                    <NavLink to={`/details/${code}, ${name}, ${description}`} className="btn-link p-2 fs-5">Enter {element}</NavLink>
-                </button>
+            
+                <NavLink to={`/details/${code}, ${name}, ${description}`} className="btn btn-primary px-2 fs-5">Enter {element}</NavLink>
             </div>
             </div>
         </div>
