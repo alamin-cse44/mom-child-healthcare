@@ -4,7 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-*bullet point
+Markup : ```javascript
+         ```
+
 
 ### `npm start`
 
